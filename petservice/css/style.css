@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
-@import url(https://fonts.googleapis.com/css?family=Lora:400italic,400);
+@import url(https://fonts.googleapis.com/css?family=Cookie);
 
 /**  to see the layout for experiment increase the border px**/
 
@@ -8,14 +8,12 @@ div {
     border-radius: 0px !important;
 }
 body {
-    font-family: "Roboto Slab", sans-serif;
     font-weight: 300;
     font-size: 2em;
     position: relative;
     background-size: cover;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", sans-serif;
     font-weight: 100;
     margin: 0;
 }
@@ -203,15 +201,19 @@ header .inbody .navbar-brand span.subhead {
     display: block;
     width: 80px;
     margin: 0 auto;
-    margin-bottom: 5px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 #services-clients h2, #services h2 {
-    font: normal 55px 'Cookie', cursive;
-    margin-bottom: 10px;
+    font: normal 55px 'cookie', cursive;
+    margin-bottom: 20px;
 }
 #services-clients h3, #services h3 {
-    font: normal 55px 'Cookie', cursive;
-    margin-bottom: 10px;
+    font: normal 55px 'cookie', cursive;
+    margin-bottom: 40px;
+}
+#services {
+    padding-bottom: 40px;
 }
 @media only screen and (min-width: 450px) and (max-width: 768px) {
     .service p {
@@ -242,7 +244,7 @@ header .inbody .navbar-brand span.subhead {
 }
 .doctor p {
     font-size: .8em;
-    font-family: 'Lora', serif;
+    font-family: '', serif;
     font-style: Italic;
 }
 .doctor img {
@@ -267,7 +269,7 @@ header .inbody .navbar-brand span.subhead {
     border-left: none;
     min-height: 500px;
     position: relative;
-    font-family: 'Lora', serif;
+    font-family: 'cookie', serif;
     font-style: Italic;
 }
 #testimonials blockquote .quote {
