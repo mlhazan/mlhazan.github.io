@@ -243,9 +243,8 @@ header .inbody .navbar-brand span.subhead {
     padding-bottom: 5px;
 }
 .doctor p {
-    font-size: .8em;
-    font-family: '', serif;
-    font-style: Italic;
+    font-size: 1em;
+    font-family: serif;
 }
 .doctor img {
     width: 100%;
