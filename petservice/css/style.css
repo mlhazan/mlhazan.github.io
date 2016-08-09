@@ -199,17 +199,17 @@ header .inbody .navbar-brand span.subhead {
     margin: 0px 0;
     text-align: center;
 }
-#services img.icon {
+#services-clients img.icon, #services img.icon {
     display: block;
     width: 80px;
     margin: 0 auto;
     margin-bottom: 5px;
 }
-#services h2 {
+#services-clients h2, #services h2 {
     font: normal 55px 'Cookie', cursive;
     margin-bottom: 10px;
 }
-#services h3 {
+#services-clients h3, #services h3 {
     font: normal 55px 'Cookie', cursive;
     margin-bottom: 10px;
 }
