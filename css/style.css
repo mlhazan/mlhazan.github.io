@@ -1,26 +1,38 @@
-html,body{
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+html, body {
     width: 100%;
     height: 100%;
     display: block;
+    padding: 0;
     margin: 0 auto;
     background-color: #FFFFFF;
 }
-#main{
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#main {
     width: 75%;
     height: 100%;
     display: block;
     margin: 0 auto;
-
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
+
 #particle-frame {
     width: 100%;
-    height: 45%;
+    height: 300px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
     overflow: hidden;
     background: #7986CB;
-
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     line-height: 1.3;
@@ -35,18 +47,21 @@ html,body{
 
 .intro {
     position: absolute;
-    left: 0;
-    top: 25%;
-    padding: 0 20px;
-    width: 100%;
+    top: 150px;
+    padding-left: 20%;
+    padding-right: 20%;
     text-align: center;
 }
+
 h1 {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 0.015em;
 }
+
+
 /*Underline*/
+
 h1::after {
     content: '';
     width: 180px;
@@ -55,11 +70,13 @@ h1::after {
     height: 5px;
     margin: 5px auto;
 }
-.text-title{
+
+.text-title {
     margin: 0 0 30px 0;
     font-size: 18px;
     letter-spacing: 0.8em;
 }
+
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -77,40 +94,41 @@ h1::after {
     -o-transition: all 0.4s;
     transition: all 0.4s;
 }
+
 .btn:hover {
     color: #C5CAE9;
     border-color: #C5CAE9;
 }
 
-
-#img-main{
-    width:12%;
+#img-main {
+    width: 12%;
 }
+
 .image-circle {
     border-radius: 50%;
     border: 3px solid #757575;
-
 }
-.image-shadow{
 
+.image-shadow {
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-
 }
-#personal{
-    width:100px;
+
+#personal {
+    margin: 0;
+    width: 100px;
     height: 100px;
 }
-.personal-info{
-    padding: 35px 50px 40px 50px;
-    background-color:#E0E0E0;
-    width: 30%;
+
+.personal-info {
+    padding: 30px 50px 40px 40px;
+    background-color: #E0E0E0;
+    width: 100%;
     height: 45%;
     display: block;
-    background: rgba(183, 190, 201,.7);
-
+    background: rgba(58, 107, 190, 0.7);
 }
 
-.text-personal-title{
+.text-personal-title {
     margin: 0 0 30px 0;
     font-size: 15px;
     letter-spacing: 0.4em;
@@ -121,23 +139,60 @@ h1::after {
     display: block;
     clear: both;
     padding-bottom: 1px;
-    border-bottom: 1px dashed lightcyan; }
-.box .one,  .box .two {
-    padding: 0 8px 0 0; }
+    border-bottom: 1px dashed lightcyan;
+}
+
+.box .one, .box .two {
+    padding: 0 12px 0 0;
+}
+
 .box .one p .two p {
-    margin: 0; }
+    margin: 0;
+}
+
 .box .one {
     text-transform: uppercase;
     display: inline-block;
     width: 20%;
-    margin-right: 21px;
-    vertical-align: top; 
-    letter-spacing: 0.2em;}
+    margin-right: 35px;
+    vertical-align: top;
+    letter-spacing: 0.2em;
+}
 
 .box .two {
     display: inline-block;
     color: #000000;
     position: relative;
     width: 60%;
-    letter-spacing: 0.2em;}
+    letter-spacing: 0.2em;
+}
 
+.box .two {
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    width: 60%;
+    letter-spacing: 0.2em;
+}
+
+.box .two {
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    width: 60%;
+    letter-spacing: 0.2em;
+}
+
+.col-md-4 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.col-md-8.col-md-12 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.about {
+    margin-top: 0;
+}
