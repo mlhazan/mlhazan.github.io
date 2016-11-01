@@ -25,6 +25,7 @@ html, body {
 .container {
     width: 65%;
     height: 100%;
+    overflow: hidden;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
@@ -214,9 +215,25 @@ h1::after {
 
 /*------------------------------menu----------------------------------------------------*/
 
+
+/*------------------------------Margin--------------------------------------------------*/
+
+.margin-bottom {
+    width: 100%;
+    height: 10px;
+    background: #1e78b3;
+    opacity: .7;
+    border-bottom: 2px solid #4a4abc;
+}
+
+
+/*------------------------------Margin--------------------------------------------------*/
+
+
+/*------------------------------Personal------------------------------------------------*/
+
 #personal {
     width: 100px;
-    height: 100px;
 }
 
 .personal-info {
@@ -224,7 +241,7 @@ h1::after {
     padding: 30px 50px 40px 40px;
     background-color: #E0E0E0;
     width: 100%;
-    height: 45%;
+    height: 100%;
     background: rgba(58, 107, 190, 0.7);
 }
 
@@ -267,6 +284,39 @@ h1::after {
     letter-spacing: 0.2em;
 }
 
+
+/*------------------------------about--------------------------------------------------*/
+
 .about {
-    margin-top: 0;
+    height: 70%;
+    background: #dfe8eb;
+    padding: 5px;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
+
+#about-title {
+    float: left;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 1.6em;
+}
+
+#about-para {
+    color: #2e6395;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.thumbnail {
+    margin-top: 15px;
+    float: left;
+    width: 99%;
+    height: 178px;
+    background: grey;
+}
+
+
+/*------------------------------about---------------------------------------------------*/
