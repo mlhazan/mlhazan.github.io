@@ -46,9 +46,10 @@
 
         .intro {
             position: absolute;
-            top: 170px;
+            top: 150px;
             padding-left: 20%;
             padding-right: 20%;
+            padding-bottom: 20%;
             text-align: center;
         }
 
