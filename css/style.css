@@ -79,6 +79,14 @@ h1::after {
     letter-spacing: 0.8em;
 }
 
+.social-icons {
+    color: white;
+    background: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -399,6 +407,13 @@ h1::after {
     margin: 0 0 30px 0;
     font-size: 15px;
     letter-spacing: 0.4em;
+}
+
+
+/*------------*/
+
+#circle {
+    text-align: center;
 }
 
 
