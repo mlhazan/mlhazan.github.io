@@ -1,23 +1,23 @@
-/* Circle Progress */
+$(document).ready(function() {
+    $("#test-circle").circliful({
+        animationStep: 5,
+        foregroundBorderWidth: 5,
+        backgroundBorderWidth: 15,
+        percent: 75
+    });
+});
+$(document).ready(function() {
 
-
-$(window).scroll(function() {
-    var windowWidth = $(this).width();
-    var windowHeight = $(this).height();
-    var windowScrollTop = $(this).scrollTop();
-
-    if (windowScrollTop > 760 && $('#circle').is(':hidden')) {
-        $('#circle').show('normal', function() {
-            $(this).circleProgress({
-                value: 0.75,
-                size: 180,
-                fill: {
-                    gradient: ["lightblue", "grey"]
-                }
-            });
-        });
-    }
-    if (windowScrollTop < 760 && $('#circle').is(':visible')) {
-        $('#circle').hide();
-    }
+    $(window).scroll(function() {
+        //if you hard code, then use console
+        //.log to determine when you want the
+        //nav bar to stick.
+        console.log($(window).scrollTop())
+        if ($(window).scrollTop() > 280) {
+            $('#menu').addClass('nav');
+        }
+        if ($(window).scrollTop() < 281) {
+            $('#menu').removeClass('nav');
+        }
+    });
 });
