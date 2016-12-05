@@ -69,10 +69,26 @@
         </div>
         <!--row-->
         <!--navigation menu-->
-        <div class="row">
+        <div id="menu-bar" class="row">
             <div id="menu">
 
+                <script>
+                    $(document).ready(function() {
 
+                        $(window).scroll(function() {
+                            //if you hard code, then use console
+                            //.log to determine when you want the
+                            //nav bar to stick.
+                            console.log($(window).scrollTop())
+                            if ($(window).scrollTop() > 900) {
+                                $('#menu-bar').addClass('navbar-fixed col-lg-12');
+                            }
+                            if ($(window).scrollTop() < 901) {
+                                $('#menu-bar').removeClass('navbar-fixed col-lg-12');
+                            }
+                        });
+                    });
+                </script>
                 <div class="col-md-12 nopadding">
                     <ul class="nav">
                         <li>
@@ -283,13 +299,48 @@
 
                 <div class="tech-left col-lg-6 nopadding">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 nopadding">
+                        <div class="col-lg-12 col-md-12">
                             <img src="icons/devices.svg" alt="devices" height="400px" width="95%" />
                         </div>
                         <div class="col-lg-12 col-md-12">
 
                             <h1 class="tech-h1">Front End and Back End</h1>
-                            <h2 class="tech-language">Java</h2>
+
+                            <div class="tech-language col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/java.png" alt="java" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/javafx.png" alt="javafx" />
+
+                            </div>
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/html.png" alt="html" />
+
+                            </div>
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/javascript.png" alt="javascript" />
+
+                            </div>
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/css.png" alt="css" />
+
+                            </div>
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/android.png" alt="android" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/jquery.png" alt="jquery" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/git.png" alt="git" />
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -301,8 +352,45 @@
                         </div>
                         <div class="col-lg-12 col-md-12">
 
-                            <h1 class="tech-h1">Back End and Others</h1>
-                            <h2 class="tech-language">Java</h2>
+                            <h1 class="tech-h1">Back End and Other Tech</h1>
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/java-ee.png" alt="jee" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/oracle.png" alt="oracle" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/mysql.png" alt="mysql" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/postgresql.png" alt="postgresql" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/gradle.png" alt="gradle" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/spring.png" alt="spring" />
+
+                            </div>
+
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/maven.png" alt="maven" />
+
+                            </div>
+                            <div class="tech-languages col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img class="thumbnail tech-language-icon" src="images/tomcat.png" alt="tomcat" />
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -318,17 +406,27 @@
 
         <!--experience ends-->
         <div>
-            <h1>Experience</h1>
+
+            <br/>
+
+            <h1>Experience</h1><br/>
+
+
             <ul class="stats-container row">
-                <li class="col-lg-3 col-md-3" data-provide="circular" data-fill-color="#db4dc2" data-percent="true" data-initial-value="25" data-max-value="100" data-label="Front End Android " data-title="Websites and Apps" data-dates="2015 - Present" style="width: 272px; height: 272px;">
+                <li class="col-lg-3 col-lg-6" data-provide="circular" data-fill-color="#db4dc2" data-percent="true" data-initial-value="25" data-max-value="100" data-label="Front End Android " data-title="Websites and Apps" data-dates="2015 - Present" style="width: 220px; height: 272px;">
                 </li>
 
-                <li class="col-lg-3 col-md-3" data-provide="circular" data-fill-color="#db4dc2" data-percent="true" data-initial-value="3" data-max-value="5" data-label="Java Desktop and Web" data-title="@School" data-dates="2015 - Present" style="width: 272px; height: 272px;"></li>
+                <li class="col-lg-3 col-lg-6" data-provide="circular" data-fill-color="#db4dc2" data-percent="true" data-initial-value="3" data-max-value="5" data-label="Java Desktop and Web" data-title="@School" data-dates="2015 - Present" style="width: 220px; height: 272px;"></li>
 
-                <li class="col-lg-3 col-md-3" data-provide="circular" data-fill-color="#db4dc2" data-percent="true" data-initial-value="15" data-max-value="100" data-label="Teaching Assistant and Sales" data-title="University and Retail" data-dates="2011 - 2014" style="width: 272px; height: 272px;"></li>
+                <li class="col-lg-3 col-lg-6" data-provide="circular" data-fill-color="#db4dc2" data-percent="true" data-initial-value="15" data-max-value="100" data-label="Teaching Assistant and Sales" data-title="University and Retail" data-dates="2011 - 2014" style="width: 220px; height: 272px;"></li>
+
+                <li class="col-lg-3 col-lg-6" data-provide="circular" data-fill-color="#db4dc2" data-percent="true" data-initial-value="15" data-max-value="100" data-label="Teaching Assistant and Sales" data-title="University and Retail" data-dates="2011 - 2014" style="width: 220px; height: 272px;"></li>
 
 
             </ul>
+            <br/>
+
+            </br/>
 
         </div>
 
@@ -342,109 +440,43 @@
         <!--Technology-->
         <div class="row">
 
-            <div class="col-lg-12 nopadding">
+            <div class="col-lg-12">
                 <div id="tech-title">
-                    Technologies
+                    My Works
                 </div>
 
 
-
-
-
-
-
-
-
-
-                <div id="tech">
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/java.png" alt="java" />
+                <div id="tech-work">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="thumbnail tech-work-icon" src="images/java.png" alt="java" />
 
                     </div>
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/java-ee.png" alt="jee" />
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="thumbnail tech-work-icon" src="images/java-ee.png" alt="jee" />
 
                     </div>
 
 
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/javafx.png" alt="javafx" />
+
+
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="thumbnail tech-work-icon" src="images/java.png" alt="java" />
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img class="thumbnail tech-work-icon" src="images/java-ee.png" alt="jee" />
 
                     </div>
 
 
-                    <!-- <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="language-icon" src="images/primefaces.png" alt="primeface" />
-
-                    </div> -->
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/html.png" alt="html" />
-
-                    </div>
-
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/oracle.png" alt="oracle" />
-
-                    </div>
-
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/mysql.png" alt="mysql" />
-
-                    </div>
-
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/postgresql.png" alt="postgresql" />
-
-                    </div>
-
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/gradle.png" alt="gradle" />
-
-                    </div>
-
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/spring.png" alt="spring" />
-
-                    </div>
-
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/maven.png" alt="maven" />
-
-                    </div>
 
 
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/tomcat.png" alt="tomcat" />
-
-                    </div>
-
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/javascript.png" alt="javascript" />
-
-                    </div>
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/jquery.png" alt="jquery" />
-
-                    </div>
 
 
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/css.png" alt="css" />
 
-                    </div>
 
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/android.png" alt="android" />
 
-                    </div>
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/git.png" alt="git" />
-
-                    </div>
-                    <div class="languages col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <img class="thumbnail language-icon" src="images/bootstrap.png" alt="bootstrap" />
-
-                    </div>
 
                 </div>
             </div>
@@ -533,26 +565,6 @@
 
     </div>
     <!--container-bootstrap-->
-</body>
-
-</html>
-<!--container-bootstrap-->
-</body>
-
-</html>
-
-</body>
-
-</html>
-
-</body>
-
-</html>
-
-</body>
-
-</html>
-
 </body>
 
 </html>
