@@ -209,6 +209,7 @@
                 return b.stopRequested || 1 <= c ? (k.attributes.currentValue += (a - k.attributes.currentValue) * c, !1) : !0;
             }
 
+
             function e(a) {
                 c(this).queue("circular", function(a) {
                     (this.activeAnimationThread = new q({
