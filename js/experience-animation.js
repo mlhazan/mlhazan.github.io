@@ -120,11 +120,11 @@
                 if ("undefined" !== typeof G_vmlCanvasManager) G_vmlCanvasManager.initElement(g);
                 else return console.log("Your browser does not support HTML5 Canvas, or excanvas is missing on IE"), !1;
             return g;
-        },
+        }, //data-percent data-label data-title data-dates
         _attachLabels: function() {
             var a = c("<span></span>").addClass(this.options.digitClassName),
                 b = c("<span></span>").addClass(this.options.labelClassName).text(this.options.label),
-                z = c("<span></span>").addClass(this.options.titleClassName).text(this.options.title),
+                z = c("<br/><span></span>").addClass(this.options.titleClassName).text(this.options.title),
                 y = c("<span></span>").addClass(this.options.datesClassName).text(this.options.dates);;
 
             this.element.append([a, b, z, y]);
