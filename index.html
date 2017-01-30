@@ -1,590 +1,282 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio inc</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Portfolio inc.</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./menu/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./menu/css/component.css"> -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/experience-animation.css" />
-    <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
-    <script type='text/javascript' src='js/demo.js'></script>
-    <!-- <script type='text/javascript' src='js/circle-progress.min.js'></script>
-    <script type='text/javascript' src='js/circle-progress.js'></script> -->
-    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
-    <script type='text/javascript' src='js/jquery.circliful.js'></script>
-    <script type='text/javascript' src='js/technologies.js'></script>
-    <link rel="stylesheet" href="css/technologies.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <script type='text/javascript' src='js/experience-animation.js'></script>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
+    <body data-spy="scroll" data-target="#nav">
+        <header class="clearfix" id="home">
+            <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav social-list">
+                            <li><a href="https://github.com/mlhazan" target="_blank"><i class="fa fa-github fa-2x" title="GitHub" aria-hidden="true"></i>
+                        </a></li>
+                            <li><a href="https://www.youtube.com/channel/UCZcmQ0znOG_pgaTEWKna_0Q#" target="_blank"><i class="fa fa-youtube fa-2x" title="youtube" aria-hidden="true"></i>
+                        </a></li>
 
-
-                <div id="particle-frame">
-                    <div>
-
-                        <!-- id="particles"> -->
-                        <div class="intro">
-                            <img class="image-circle image-shadow" id="img-main" alt="ml" src="images/mithun.jpg" />
-                            <br>
-                            <h1 id="intro-text">M. Hasan M.</h1>
-                            <div id="text-animation" class="text-title">Full Stack Web Develper
-                            </div>
-                            <div>
-                                <a href="https://github.com/mlhazan">
-                                    <img src="icons/github.svg" alt="code" height="30px" width="30px" />
-                                </a>
-                                <a href="https://github.com/mlhazan">
-                                    <img src="icons/facebook.svg" alt="code" height="30px" width="30px" />
-                                </a>
-                                <a href="https://github.com/mlhazan">
-                                    <img src="icons/twitter.svg" alt="code" height="30px" width="30px" />
-                                </a>
-                                <a href="https://github.com/mlhazan">
-                                    <img src="icons/linkedin.svg" alt="code" height="30px" width="30px" />
-                                </a>
-                                <a href="https://github.com/mlhazan">
-                                    <img src="icons/youtube.svg" alt="code" height="30px" width="30px" />
-                                </a>
-                                <br/>
-
-                                </br/>
-                                <div class="btn">Resume</div>
-                            </div>
-                        </div>
+                            <li><a href="https://twitter.com/mlhazan" target="_blank"><i class="fa fa-twitter fa-2x" title="Twitter" aria-hidden="true"></i>
+                        </a></li>
+                            <!--
+                        <li><a href="#fb"><i class="fa fa-facebook fa-2x" title="Facebook" aria-hidden="true"></i>
+                        </a></li> -->
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li data-elem="parallax"><a href="#home">HOME</a></li>
+                            <li data-elem="about"><a href="#about">ABOUT</a></li>
+                            <li data-elem="works"><a href="#works">WORKS</a></li>
+                            <li data-elem="skills"><a href="#skills">SKILLS</a></li>
+                            <li data-elem="contacts"><a href="#contacts">CONTACTS</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--row-->
-        <!--navigation menu-->
-        <div id="menu-bar" class="row">
-            <div id="menu">
+            </nav>
 
-                <script>
-                    $(document).ready(function() {
-
-                        $(window).scroll(function() {
-                            //if you hard code, then use console
-                            //.log to determine when you want the
-                            //nav bar to stick.
-                            console.log($(window).scrollTop())
-                            if ($(window).scrollTop() > 900) {
-                                $('#menu-bar').addClass('navbar-fixed col-lg-12');
-                            }
-                            if ($(window).scrollTop() < 901) {
-                                $('#menu-bar').removeClass('navbar-fixed col-lg-12');
-                            }
-                        });
-                    });
-                </script>
-                <div class="col-md-12 nopadding">
-                    <ul class="nav">
-                        <li>
-                            <a href="#">
-                                <span class="icon">
-                                    <i aria-hidden="true"  class="fa fa-home"></i>
-                				</span>
-                                <div>
-                                    <span class="icon-text">Home</span>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon">
-                				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                				</span>
-                                <div>
-                                    <span class="icon-text">Resume</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon">
-                					<i class="fa fa-paw" aria-hidden="true"></i>
-                				</span>
-                                <div>
-                                    <span class="icon-text">Portfolio</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.mlhazan.blogspot.ca">
-                                <span class="icon">
-                				    <i class="fa fa-pencil-square" aria-hidden="true"></i>
-                				</span>
-                                <div>
-                                    <span class="icon-text">Blog</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon">
-                					<i class="fa fa-comments" aria-hidden="true"></i>
-                			    </span>
-                                <div>
-                                    <span class="icon-text">Feedback</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon">
-                					<i aria-hidden="true" class="fa fa-envelope"></i>
-                				</span>
-                                <div>
-                                    <span class="icon-text">Contact</span>
-                                </div>
-
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!--col-md-12 nopadding-->
-            </div>
-            <!--menu-->
-        </div>
-        <!--row ends-->
-
-        <div class="row">
-            <div id="margin">
-                <div class="col-md-12 nopadding">
-                    <div class="margin-bottom">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--margin-->
-
-        <div class="row">
-            <div id="#personal">
-                <div class="col-lg-5 col-md-12 nopadding">
-                    <div class="personal-info">
-                        <p class="text-personal-title">PERSONAL INFO</p>
-                        <div class="box">
-                            <div class="one">
-                                <p class="small uppercase">Name:</p>
-                            </div>
-                            <div class="two">
-                                <p class="small">Mahmudul Hasan Mithun</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="one">
-                                <p class="small uppercase">Phone:</p>
-                            </div>
-                            <div class="two">
-                                <p class="small">+1 647 739 4740</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="one">
-                                <p class="small uppercase">Email:</p>
-                            </div>
-                            <div class="two">
-                                <p class="small">mlhazan@hotmail.com</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="one">
-                                <p class="small uppercase">Address</p>
-                            </div>
-                            <div class="two">
-                                <p class="small">Toronto, Ontario</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--col-md-4-->
-                <div class="col-lg-7 col-md-12 nopadding">
-
-                    <div class="about">
-                        <div id="about-title">ABOUT ME</div>
-                        <br/><br/><br/>
-
-                        <div id="about-para">
-                            Professional and Hard Working Software Developer and Full Stack Web Designer.
-                            <br/>
-
-                            <br/>
-
-                            <div class="col-sm-4 nopadding">
-
-                                <div class="thumbnail-about">
-                                    <div class="thumbnail-icon">
-
-                                        <img src="icons/code.svg" alt="code" height="50px" width="50px" />
-
-                                    </div>
-                                    <div class="thumbnail-title">Code Efficiency</div>
-                                    <div class="thumbnail-text">
-                                        Always like to do clean, agile and maintainable codes where efficiency is the most desirable.
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-sm-4 nopadding">
-
-                                <div class="thumbnail-about">
-                                    <div class="thumbnail-icon">
-
-                                        <img src="icons/scalable.svg" alt="code" height="50px" width="50px" />
-
-                                    </div>
-                                    <div class="thumbnail-title">Scalable</div>
-                                    <div class="thumbnail-text">
-                                        Scalable and service oriented design by following design pattern.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-4 nopadding">
-
-                                <div class="thumbnail-about">
-                                    <div class="thumbnail-icon">
-
-                                        <img src="icons/analysis.svg" alt="code" height="50px" width="50px" />
-
-                                    </div>
-                                    <div class="thumbnail-title">Productive</div>
-                                    <div class="thumbnail-text">
-                                        Highly productive and on demand output for optimal requirements.
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-            <!--row-->
-        </div>
-        <!--personal-->
-        <div class="row">
-            <div id="margin-2">
-                <div class="col-md-12 nopadding">
-                    <div class="margin-bottom-2">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--margin-bottom-2-->
-
-
-
-        <div class="row">
-
-            <div id="technologies">
-
-                <div class="tech-left col-lg-6 nopadding">
+            <div class="banner parallax scroll" id="parallax">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <img src="icons/devices.svg" alt="devices" height="400px" width="95%" />
+                        <div class="col-md-offset-4 col-md-8 col-sm-12  banner-content">
+                            <h3>full stack Java developer</h3>
+                            <h1>
+                            Portfolio Webpage
+                        </h1>
+                            <h3>Mahmudul Hasan</h3>
                         </div>
-                        <div class="col-lg-12 col-md-12">
+                    </div>
+                    <div class="row">
+                        <br/>
 
-                            <h1 class="tech-h1">Current Focus</h1>
-
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/java.png" alt="java" />
-
-                            </div>
-
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/javafx.png" alt="javafx" />
-
-                            </div>
-
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/java-ee.png" alt="jee" />
-
-                            </div>
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/oracle.png" alt="oracle" />
-
-                            </div>
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/mysql.png" alt="mysql" />
-
-                            </div>
-
-
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/spring.png" alt="spring" />
-
-                            </div>
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/maven.png" alt="maven" />
-                            </div>
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/tomcat.png" alt="tomcat" />
-
-                            </div>
-
-                            <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <img class="thumbnail-language-icon tech-language-icon" src="images/git.png" alt="git" />
-
-                            </div>
+                        </br/>
+                        <div class="cb-scroller"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 40" style="enable-background:new 0 0 25 40;" xml:space="preserve"><path d="M11,39.5C5.2,39.5,0.5,34.8,0.5,29V11C0.5,5.2,5.2,0.5,11,0.5h3c5.8,0,10.5,4.7,10.5,10.5v18c0,5.8-4.7,10.5-10.5,10.5H11z"></path><circle cx="12.5" cy="11.5" r="1.5"></circle></svg>
                         </div>
-
-
                     </div>
                 </div>
             </div>
+        </header>
 
-            <div class="tech-right col-lg-6 nopadding">
+        <section class="about scroll" id="about">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 nopadding">
-                        <img src="icons/cloud.svg" alt="devices" height="400px" width="95%" />
-                    </div>
-                    <div class="col-lg-12 col-md-12">
+                    <div class="text-center about-content">
+                        <h2>Hi there!</h2>
+                        <img class="image-about" src="images/mithun.jpg" alt="about me" class="image-responsive img-circle img-thumbnail center-block">
 
-                        <h1 class="tech-h1">On Going experiences</h1>
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/jsp.png" alt="jsp" />
-
+                        <div>
+                            <a href="https://drive.google.com/file/d/0B6rTdAklg1hGZmlFbWlBWlFVWnM/view?usp=sharing" class="btn">Resume</a>
                         </div>
-
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/html.png" alt="html" />
-
-                        </div>
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/javascript.png" alt="javascript" />
-
-                        </div>
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/css.png" alt="css" />
-
-                        </div>
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/android.png" alt="android" />
-
-                        </div>
-
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/jquery.png" alt="jquery" />
-
-                        </div>
-
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/postgresql.png" alt="postgresql" />
-
-                        </div>
-
-
-
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/gradle.png" alt="gradle" />
-
-                        </div>
-
-                        <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <img class="thumbnail-language-icon tech-language-icon" src="images/bootstrap.png" alt="bootstrap" />
-
-                        </div>
-
+                        <p class="about-text">My name is Hasan, I am a Java Front and Backend Developer. I am truly focused on Spring, Hibernate, JSP, JSF, Database driven web and application development. My primary goal is to be successfull in Java Server Side and Mobile
+                            Application development. I like collaborative environment and have an enthusiasm in Open Source program. I also have experience in HTML5, Bootstrap/CSS, javascript & Jquery.
+                        </p>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-
-    </div>
+        </section>
 
 
-    <!---Experience-->
-
-
-    <!--experience ends-->
-    <div>
-
-        <br/>
-
-        <h1>Experience</h1><br/>
-
-
-        <ul class="stats-container row">
-            <li class="col-lg-3 col-md-3" data-provide="circular" data-fill-color="grey" data-percent="true" data-initial-value="25" data-max-value="100" data-label="Front End" data-title="Websites and Apps" data-dates="2015 - Present" style="width: 310px; height: 272px;">
-            </li>
-
-            <li class="col-lg-3 col-md-3" data-provide="circular" data-fill-color="grey" data-percent="true" data-initial-value="70" data-max-value="100" data-label="Java Desktop and Web" data-title="@School" data-dates="2015 - Present" style="width: 310px; height: 272px;"></li>
-
-            <li class="col-lg-3 col-md-3" data-provide="circular" data-fill-color="grey" data-percent="true" data-initial-value="25" data-max-value="100" data-label="Teaching Assistant and Sales" data-title="University and Retail" data-dates="2011 - 2014" style="width: 310px; height: 272px;"></li>
-
-            <li class="col-lg-3 col-md-3" data-provide="circular" data-fill-color="grey" data-percent="true" data-initial-value="15" data-max-value="100" data-label="Android" data-title="@School" data-dates="2011 - 2014" style="width: 310px; height: 272px;"></li>
-
-
-        </ul>
-        <br/>
-
-        </br/>
-
-    </div>
-
-
-
-    <!--Technology-->
-    <div class="row">
-
-        <div class="col-lg-12">
-            <div id="tech-title">
-                My Works
+        <section class="works scroll" id="works">
+            <div class="container">
+                <h2 class="text-center">
+                Portfolio projects
+            </h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://github.com/mlhazan/student-information-system-jsp-1.01/" target="_blank">
+                            <div class="block wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="0.15s">
+                                <div class="works-thumb" id="work-1"></div>
+                                <div class="works-caption">Student Information System</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://github.com/mlhazan/reservation-app" target="_blank">
+                            <div class="block wow rotateInDownLeft" data-wow-duration=".8s" data-wow-delay="0.3s">
+                                <div class="works-thumb" id="work-2"></div>
+                                <div class="works-caption">Ticket Reservation</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://play.google.com/store/apps/details?id=com.xscourse.gemshunter&hl=en" target="_blank">
+                            <div class="block wow rotateInDownLeft" data-wow-duration=".8s" data-wow-delay="0.45s">
+                                <div class="works-thumb" id="work-3"></div>
+                                <div class="works-caption">Android Puzzle Game</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="" target="_blank">
+                            <div class="block wow rotateInDownRight" data-wow-duration=".8s" data-wow-delay="0.6s">
+                                <div class="works-thumb" id="work-4"></div>
+                                <div class="works-caption">Comming Soon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://mlhazan.github.io/petservice/" target="_blank">
+                            <div class="block wow rotateInDownRight" data-wow-duration=".8s" data-wow-delay="0.75s">
+                                <div class="works-thumb" id="work-5"></div>
+                                <div class="works-caption">Freelance Work</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="block wow rotateInDownRight" data-wow-duration=".8s" data-wow-delay="0.9s">
+                            <div class="works-thumb" id="work-6"></div>
+                            <a href="#">
+                                <div class="works-caption">Photo blog</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-            <div class="row tech-work">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <a href="https://github.com/mlhazan/student-information-system-jsp-1.01"><img class="tech-work-icon " src="works/sis.png " alt="sis " /></a>
-                        <div class="languages ">
-                            Java | JSP | JSTL| JDBC | XML | HTML | JAVASCRIPT | CSS
+        </section>
+        <section class="skills scroll skills-img" id="skills">
+            <div class="container">
+                <h2>Skills and proficiency</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
+                            <img src="images/java.jpg" alt="Java logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
+                            <img src="images/spring.jpg" alt="Spring logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
+                            <img src="images/hibernate.jpg" alt="Hibernate logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
+                        </div>
+                    </div>
 
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <img src="images/html5.jpg" alt="HTML logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
+                        </div>
+                    </div>
 
-                        <p><a href="https://github.com/mlhazan" class="btn btn-primary " role="button ">More</a> </p>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                            <img src="images/javascript.jpg" alt="javascript logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
+                        </div>
+                    </div>
 
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                            <img src="images/git.jpg" alt="git logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                            <img src="images/android.jpg" alt="android logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="skills-thumb wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                            <img src="images/oracle.jpg" alt="oracle logo" class="img-responsive img-thumbnail center-block">
+                            <h3></h3>
+                            <p>.....</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="social-footer text-center scroll" id="contacts">
+            <div class="container">
+                <h2>Social links</h2>
+                <ul class="social-list">
+                    <li><a href="https://github.com/mlhazan" target="_blank"><i class="fa fa-github fa-3x" title="GitHub" aria-hidden="true"></i>
+                </a></li>
+                    <li> <a href="https://www.youtube.com/channel/UCZcmQ0znOG_pgaTEWKna_0Q"><i class="fa fa-youtube fa-3x" title="Youtube" aria-hidden="true"></i>
+                </a></li>
+                    <li> <a href="https://twitter.com/mlhazan"><i class="fa fa-twitter fa-3x" title="Twitter" aria-hidden="true"></i>
+            </a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="container scroll wow bounceIn">
+                <div class="row contact">
 
-                <div class="col-sm-6 col-md-4 ">
-                    <div class="thumbnail ">
-                        <a href="https://play.google.com/store/apps/details?id=com.xscourse.gemshunter "><img class=" tech-work-icon " src="works/gems.png " alt="gems " /></a>
-                        <div class="languages ">
-                            | Android SDK | <br/>| Java |
+                    <h2 class="text-center">Get in touch</h2>
+                    <div class="col-md-6 text-right">
+                        <div class="contacts-data">
+                            <h3>Ready to hire me?</h3>
+                            <a href="https://drive.google.com/file/d/0B6rTdAklg1hGZmlFbWlBWlFVWnM/view?usp=sharing" class="btn btn-default transparent">DOWNLOAD RESUME <i class="fa fa-arrow-down button-icon"></i></a>
                         </div>
-                        <p><a href="https://github.com/mlhazan" class="btn btn-primary " role="button ">More</a> </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contacts-data">
+                            <i class="fa fa-paper-plane fa-2x"></i>
+                            <span class="contact-text">mh.mithun@gmail.com</span>
+                        </div>
+                        <div class="contacts-data">
+                            <i class="fa fa-phone fa-2x"></i>
+                            <span class="contact-text">+1 647 739 4740</span>
+                        </div>
+                        <!-- <div class="contacts-data">
+                            <i class="fa fa-skype fa-2x"></i>
+                            <span class="contact-text">Mahmudul Hasan</span>
+                        </div> -->
                     </div>
                 </div>
-
-                <div class="col-sm-6 col-md-4 ">
-                    <div class="thumbnail ">
-                        <a href="https://mlhazan.github.io/petservice/ "><img class=" tech-work-icon " src="works/pet.png " alt="pet " /></a>
-                        <div class="languages ">
-                            | html5 | javascript | <br/>| css |
-                        </div>
-                        <p><a href="https://github.com/mlhazan" class="btn btn-primary " role="button ">More</a> </p>
-                    </div>
-                </div>
+                <p class="text-center">
+                    ALL RIGHTS RESERVED. 2017
+                </p>
 
             </div>
+        </footer>
+    </body>
 
-        </div>
-    </div>
-    <!--Technology ends-->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
 
+    <script src="js/index.js"></script>
 
-
-
-
-
-
-
-
-
-    <!--Footer-->
-    <div class="row ">
-
-        <div class="col-lg-12 nopadding ">
-            <footer class="footer-distributed ">
-
-                <div class="footer-left ">
-
-                    <h3>M. <span>Hasan</span></h3>
-
-                    <p class="footer-links ">
-                        <a href="# ">Home</a> ·
-                        <a href="# ">Resume</a> ·
-                        <a href="# ">Portfolio</a> ·
-                        <a href="# ">Blog</a> ·
-                        <a href="# ">Feedback</a> ·
-                        <a href="# ">Contact</a>
-                    </p>
-
-                    <p class="footer-company-name ">M. Hasan &copy; 2015</p>
-                </div>
-
-                <div class="footer-center ">
-
-                    <div>
-                        <i class="fa fa-map-marker "></i>
-                        <p><span>St Clar Avenue East</span> Toronto, Ontario</p>
-                    </div>
-
-                    <div>
-                        <i class="fa fa-phone "></i>
-                        <p>+1 647 739 4740</p>
-                    </div>
-
-                    <div>
-                        <i class="fa fa-envelope "></i>
-                        <p><a href="mailto:mlhazan@hotmail.com ">mlhazan@hotmail.com</a></p>
-
-                    </div>
-
-                </div>
-
-                <div class="footer-right ">
-                    <br/>
-
-                    </br/><br/>
-
-                    </br/>
-                    <p class="footer-company-about ">
-
-                    </p>
-
-                    <div class="footer-icons ">
-
-                        <a href="# "><i class="fa fa-facebook "></i></a>
-                        <a href="# "><i class="fa fa-twitter "></i></a>
-                        <a href="# "><i class="fa fa-linkedin "></i></a>
-                        <a href="# "><i class="fa fa-github "></i></a>
-
-                    </div>
-
-                </div>
-
-            </footer>
-
-        </div>
-    </div>
-    <!--Footer ends-->
-
-
-
-    </div>
-    <!--container-bootstrap-->
 </body>
 
 </html>
 
-<!--container-bootstrap-->
 </body>
 
 </html>
