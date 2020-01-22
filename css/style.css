@@ -212,7 +212,7 @@ header .banner {
 }
 
 #work-3 {
-    background: url("../works/gems.png") no-repeat 100%;
+    background: url("../works/realm.png") no-repeat 100%;
     background-size: cover;
 }
 
@@ -227,9 +227,29 @@ header .banner {
 }
 
 #work-6 {
-    background: url("") no-repeat 100%;
+    background: url("../works/writefront.png") no-repeat 100%;
     background-size: cover;
 }
+
+#work-7 {
+    background: url("../works/singleton.png") no-repeat 100%;
+    background-size: cover;
+}
+
+#work-8 {
+    background: url("../works/novalon.png") no-repeat 100%;
+    background-size: cover;
+}
+
+
+.img-thumbnail{
+    height: 218px;
+    width: 260px;
+}
+
+
+
+
 
 .block::after, .block::before {
     content: '';
